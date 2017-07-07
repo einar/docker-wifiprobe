@@ -25,14 +25,14 @@ appropriate environments and volumes supplied.
 version: '2'
 services:
 
-   docker-wifiprobe:
-     image: 'docker-wifiprobe'
+   wifiprobe-server:
+     image: 'wifiprobe-server'
      volumes:
        - /home/dummy:/home/dummy
        - /etc/ssh:/etc/ssh
      environment:
        - "INSTALLDIR=/opt/probe-website"
-     container_name: postgres
+     container_name: wifiprobe-server 
      ports:
        - '5000:5000'
 
