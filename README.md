@@ -13,7 +13,7 @@ appropriate environments and volumes supplied.
 * Install docker and git (if you havent already)  
 * Create a dummy user for wifiprobe to use (unless you want to generate new ssh-keys every restart)  
 ``` useradd -m dummy ```
-* Create installation directory locally for the wifiprobeserver (for persistence of database) 
+* Create installation directory locally for the wifiprobeserver (for persistence of database)  
 ``` mkdir -p /opt/probe-website ```
 * Clone this repository  
 ``` git clone https://github.com/einar/docker-wifiprobe ```  
