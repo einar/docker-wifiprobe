@@ -10,10 +10,10 @@ instructions and code from UNINETT: "https://github.com/UNINETT/probe-website"
 Basically you need to clone the git repository; build the container & then run it with the
 appropriate environments and volumes supplied.
 
-* Install docker and git (if you havent already) 
-* Create a dummy user for wifiprobe to use (unless you want to generate new ssh-keys every restart) 
+* Install docker and git (if you havent already)  
+* Create a dummy user for wifiprobe to use (unless you want to generate new ssh-keys every restart)  
 ``` useradd -m dummy ```
-* Create installation directory locally for the wifiprobeserver (for persistence of database)
+* Create installation directory locally for the wifiprobeserver (for persistence of database) 
 ``` mkdir -p /opt/probe-website ```
 * Clone this repository  
 ``` git clone https://github.com/einar/docker-wifiprobe ```  
@@ -37,7 +37,7 @@ services:
        - '5000:5000'
 
 ~~~~
-* 1.2 ...or simply run the server from the command line using docker run like so:
+* 1.2 ...or simply run the server from the command line using docker run like so: 
 ``` docker run -v /home/dummy:/home/dummy -v /etc/ssh:/etc/ssh -p 5000:5000 wifiprobe-server  ```
 
 
