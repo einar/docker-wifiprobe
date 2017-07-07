@@ -38,6 +38,7 @@ services:
 
 ~~~~
 * 1.2 ...or simply run the server from the command line using docker run like so: 
-``` docker run -v /home/dummy:/home/dummy -v /etc/ssh:/etc/ssh -p 5000:5000 wifiprobe-server  ```
+``` docker run -v /home/dummy:/home/dummy -v /etc/ssh:/etc/ssh -e INSTALLDIR='/opt/probe-website' -p 5000:5000 wifiprobe-server  ```
 
-
+(ps. If you want to use another install directory you need to change the "mkdir" AND the environment variable
+and then rebuild the container before trying to start it again. ds.)
